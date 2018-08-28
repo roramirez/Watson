@@ -34,7 +34,7 @@ _watson_complete () {
             # finally in all other cases we expect to be filling in tags
             local IFS=$'\n'
             tags="$(watson tags | sed -e 's/ /\\\\ /g' | awk '$0="+"$0')"
-            COMPREPLY=($(compgen -W "$tags" -- ${cur}))            
+            COMPREPLY=($(compgen -W "$tags" -- ${cur}))
           fi
           ;;
         config)

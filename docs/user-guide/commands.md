@@ -1,4 +1,4 @@
-<!-- 
+<!--
     This document has been automatically generated.
     It should NOT BE EDITED.
     To update this part of the documentation,
@@ -142,25 +142,25 @@ Example:
     $ watson log --project voyager2 --project apollo11
     Thursday 08 May 2015 (56m 33s)
             f35bb24  09:26 to 10:22      56m 33s  apollo11  [reactor, brakes, steering, wheels, module]
-    
+
     Wednesday 07 May 2015 (27m 29s)
             9a1325d  09:48 to 10:15      27m 29s  voyager2  [sensors, generators, probe]
-    
+
     Tuesday 06 May 2015 (1h 47m 22s)
             530768b  12:40 to 14:16   1h 35m 45s  apollo11  [wheels]
             84164f0  14:23 to 14:35      11m 37s  apollo11  [brakes, steering]
-    
+
     Monday 05 May 2015 (8h 18m 26s)
             26a2817  09:05 to 10:03      57m 12s  voyager2  [probe, generators]
             5590aca  10:51 to 14:47   3h 55m 40s  apollo11
             c32c74e  15:12 to 18:38   3h 25m 34s  voyager2  [probe, generators, sensors, antenna]
-    
+
     $ watson log --from 2014-04-16 --to 2014-04-17
     Thursday 17 April 2014 (4h 19m 13s)
             a96fcde  09:15 to 09:43      28m 11s    hubble  [lens, camera, transmission]
             5e91316  10:19 to 12:59   2h 39m 15s    hubble  [camera, transmission]
             761dd51  14:42 to 15:54   1h 11m 47s  voyager1  [antenna]
-    
+
     Wednesday 16 April 2014 (5h 19m 18s)
             02cb269  09:53 to 12:43   2h 50m 07s  apollo11  [wheels]
             1070ddb  13:48 to 16:17   2h 29m 11s  voyager1  [antenna, sensors]
@@ -211,7 +211,7 @@ Example:
     120 frames will be left unchanged
     12  frames will be merged
     3   frame conflicts need to be resolved
-    
+
 To perform a merge operation, the user will be prompted to
 select the frame they would like to keep.
 
@@ -350,43 +350,43 @@ Example:
 
     $ watson report
     Mon 05 May 2014 -> Mon 12 May 2014
-    
+
     apollo11 - 13h 22m 20s
             [brakes    7h 53m 18s]
             [module    7h 41m 41s]
             [reactor   8h 35m 50s]
             [steering 10h 33m 37s]
             [wheels   10h 11m 35s]
-    
+
     hubble - 8h 54m 46s
             [camera        8h 38m 17s]
             [lens          5h 56m 22s]
             [transmission  6h 27m 07s]
-    
+
     voyager1 - 11h 45m 13s
             [antenna     5h 53m 57s]
             [generators  9h 04m 58s]
             [probe      10h 14m 29s]
             [sensors    10h 30m 26s]
-    
+
     voyager2 - 16h 16m 09s
             [antenna     7h 05m 50s]
             [generators 12h 20m 29s]
             [probe      12h 20m 29s]
             [sensors    11h 23m 17s]
-    
+
     Total: 43h 42m 20s
-    
+
     $ watson report --from 2014-04-01 --to 2014-04-30 --project apollo11
     Tue 01 April 2014 -> Wed 30 April 2014
-    
+
     apollo11 - 13h 22m 20s
             [brakes    7h 53m 18s]
             [module    7h 41m 41s]
             [reactor   8h 35m 50s]
             [steering 10h 33m 37s]
             [wheels   10h 11m 35s]
-    
+
     $ watson report --json
     {
         "projects": [
